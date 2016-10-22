@@ -29,7 +29,7 @@ var webpackConfig = {
         username: 'Remote username',
         password: 'Remote password',//or use privateKey login(privateKey: require('fs').readFileSync('/path/to/private/key')).
         from: 'Deploy Local path',
-        to: 'Remote full path',//important: All files will be cleared in this folder before starting deployment.
+        to: 'Remote full path',//important: All files in this folder will be cleared before starting deployment.
   })]
 };
 ```
@@ -55,7 +55,7 @@ Type: `String`
 
 #### to
 Type: `String`
-**__[Important]__: All files will be cleared in this folder before starting deployment.**
+**__[Important]__: All files in this folder will be cleared before starting deployment.**
 >Full path on the remote server where files will be deployed.
 
 #### from
@@ -116,4 +116,4 @@ plugins: [
 ]
 ```
 ## Release History
-* 2016/10/22 - v0.1.0 - Initial Release.
+* 2016/10/22 - v0.1.4 - Initial Release.
