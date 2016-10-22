@@ -60,7 +60,7 @@ Type: `String`
 
 #### from
 Type: `String`
-Default value: `build`
+Default value: `'build'`
 >Path on your local for the files you want to be deployed to the remote server. No trailing slash needed.
 
 #### privateKey

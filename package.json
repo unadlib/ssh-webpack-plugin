@@ -1,6 +1,6 @@
 {
   "name": "ssh-webpack-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Webpack SSH deployment plugin.",
   "main": "index.js",
   "scripts": {
