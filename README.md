@@ -29,7 +29,7 @@ var webpackConfig = {
         username: 'Remote username',
         password: 'Remote password',//or use privateKey login(privateKey: require('fs').readFileSync('/path/to/private/key')).
         from: 'Deploy Local path',
-        to: 'Remote full path',//important: All files in this folder will be cleared before starting deployment.
+        to: 'Remote full path',//important: If the 'cover' of value is false,All files in this folder will be cleared before starting deployment.
   })]
 };
 ```
@@ -65,7 +65,7 @@ Default value: `'build'`
 #### cover
 Type: `Boolean`
 Default value: `true`
-**__[Important]__: If this value is false,all files in this folder will be cleared before starting deployment.**
+**__[Important]__: If this value is false,all files in remote path folder will be cleared before starting deployment.**
 >Local Deployment files will be cover to deployment directory on remote path.
 
 #### privateKey
@@ -121,5 +121,5 @@ plugins: [
 ]
 ```
 ## Release History
-* 2016/10/22 - v0.1.6 - Add the 'cover' options.
+* 2016/10/22 - v0.1.7 - Add the 'cover' options.
 * 2016/10/22 - v0.1.4 - Initial Release.
