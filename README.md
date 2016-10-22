@@ -27,10 +27,9 @@ var webpackConfig = {
         host: 'Remote host',
         port: 'Remote port',
         username: 'Remote username',
-        password: 'Remote password',
-        //or use privateKey login(privateKey: require('fs').readFileSync('/path/to/private/key')).
+        password: 'Remote password',//or use privateKey login(privateKey: require('fs').readFileSync('/path/to/private/key')).
         from: 'Deploy Local path',
-        to: 'Remote full path',
+        to: 'Remote full path',//important: All files will be cleared in this folder before starting deployment.
   })]
 };
 ```
@@ -56,6 +55,7 @@ Type: `String`
 
 #### to
 Type: `String`
+**__[Important]__: All files will be cleared in this folder before starting deployment.**
 >Full path on the remote server where files will be deployed.
 
 #### from
