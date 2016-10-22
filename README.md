@@ -55,7 +55,6 @@ Type: `String`
 
 #### to
 Type: `String`
-**__[Important]__: All files in this folder will be cleared before starting deployment.**
 >Full path on the remote server where files will be deployed.
 
 #### from
@@ -63,12 +62,18 @@ Type: `String`
 Default value: `'build'`
 >Path on your local for the files you want to be deployed to the remote server. No trailing slash needed.
 
+#### cover
+Type: `Boolean`
+Default value: `true`
+**__[Important]__: If this value is false,all files in this folder will be cleared before starting deployment.**
+>Local Deployment files will be cover to deployment directory on remote path.
+
 #### privateKey
 Type: `string`
 >Path to your private key `privateKey: require('fs').readFileSync('/path/to/private/key')`
 
 #### passphrase
-Type: `string`
+Type: `String`
 >Passphrase of your private key if needed.
 
 #### before
@@ -116,4 +121,5 @@ plugins: [
 ]
 ```
 ## Release History
+* 2016/10/22 - v0.1.6 - Add the 'cover' options.
 * 2016/10/22 - v0.1.4 - Initial Release.
