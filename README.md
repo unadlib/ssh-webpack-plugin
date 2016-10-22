@@ -86,7 +86,7 @@ Default value: `20000`
 
 #### zip
 Type: `Boolean`
-Default value: `false`
+Default value: `true`
 >Compress the build before uploading.
 
 #### max_buffer
