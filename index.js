@@ -34,7 +34,7 @@ function SshWebpackPlugin(options) {
 
 SshWebpackPlugin.prototype.apply = function (compiler) {
     var that = this;
-    compiler.plugin('done',function (compilation) {
+    compiler.hooks.emit.tap('done',function (compilation) {
         that.deploy();
     });
 }
